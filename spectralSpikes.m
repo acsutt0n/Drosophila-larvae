@@ -59,7 +59,7 @@ for s = trind:freq100
   % The moving slope window is 1 Hz (+/- 0.5 Hz)
   movSlope = [movSlope; mean(sfit2(start:fin))];
 end
-for m = 
+% for m = %% ???
 
 slopeind = find(movSlope==max(movSlope));
 
