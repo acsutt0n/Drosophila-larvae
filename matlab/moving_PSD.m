@@ -15,7 +15,7 @@ function moving_PSD(trace)
 % (Hz)
 % FOR INFO ON OUTPUT: type "help spectrogram" into Matlab command window
 
-[S,F,T,P] = spectrogram(trace,100000,25000,[0.001:60],5000);
+[S,F,T,P] = spectrogram(trace,100000,50000,[0.001:60],50000);
 
 % graph specifics
 surf(T,F,log(P))
